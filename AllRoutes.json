@@ -1,0 +1,438 @@
+{
+    "Brand": {
+        "isServerDown": [
+            {
+                "method": "GET",
+                "path": "v1/Brand/isServerDown",
+                "root": "Brand",
+                "subroot": "isServerDown"
+            }
+        ],
+        "Products": [
+            {
+                "method": "POST",
+                "path": "v1/Brand/Products/UploadCustomizedProduct",
+                "root": "Brand",
+                "subroot": "Products"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Brand/Products/UploadRetailProduct",
+                "root": "Brand",
+                "subroot": "Products"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Brand/Products/ArchiveTheProduct",
+                "root": "Brand",
+                "subroot": "Products"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Brand/Products/UnarchiveTheProduct",
+                "root": "Brand",
+                "subroot": "Products"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Products/ListProducts",
+                "root": "Brand",
+                "subroot": "Products"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Products/ListArchiveProducts",
+                "root": "Brand",
+                "subroot": "Products"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Products/FetchByProductID",
+                "root": "Brand",
+                "subroot": "Products"
+            }
+        ],
+        "Auth": [
+            {
+                "method": "POST",
+                "path": "v1/Brand/Auth/SendOTP",
+                "root": "Brand",
+                "subroot": "Auth"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Brand/Auth/VerifyOTP",
+                "root": "Brand",
+                "subroot": "Auth"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Brand/Auth/RefreshToken",
+                "root": "Brand",
+                "subroot": "Auth"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Brand/Auth/Logout",
+                "root": "Brand",
+                "subroot": "Auth"
+            }
+        ],
+        "Chat": [
+            {
+                "method": "GET",
+                "path": "v1/Brand/Chat/FetchChatBuckets",
+                "root": "Brand",
+                "subroot": "Chat"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Chat/FetchBucketMessages",
+                "root": "Brand",
+                "subroot": "Chat"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Brand/Chat/UpdateReadTimestamp",
+                "root": "Brand",
+                "subroot": "Chat"
+            }
+        ],
+        "Coupon": [
+            {
+                "method": "POST",
+                "path": "v1/Brand/Coupon/AddCoupon",
+                "root": "Brand",
+                "subroot": "Coupon"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Coupon/ListCoupons",
+                "root": "Brand",
+                "subroot": "Coupon"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Brand/Coupon/UpdateCouponStatus",
+                "root": "Brand",
+                "subroot": "Coupon"
+            }
+        ],
+        "Orders": [
+            {
+                "method": "GET",
+                "path": "v1/Brand/Orders/ListOrders",
+                "root": "Brand",
+                "subroot": "Orders"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Orders/FetchBucketItems",
+                "root": "Brand",
+                "subroot": "Orders"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Brand/Orders/UpdateOrderStatus",
+                "root": "Brand",
+                "subroot": "Orders"
+            }
+        ],
+        "Profile": [
+            {
+                "method": "POST",
+                "path": "v1/Brand/Profile/RequestEditProfile",
+                "root": "Brand",
+                "subroot": "Profile"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Profile/FetchOrdersCustomersAndWebVisits",
+                "root": "Brand",
+                "subroot": "Profile"
+            }
+        ],
+        "Appointment": [
+            {
+                "method": "GET",
+                "path": "v1/Brand/Appointment/AllBookedAppointments/:StartDate/:EndDate",
+                "root": "Brand",
+                "subroot": "Appointment"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Brand/Appointment/BookAppointment",
+                "root": "Brand",
+                "subroot": "Appointment"
+            }
+        ],
+        "Reports": [
+            {
+                "method": "GET",
+                "path": "v1/Brand/Reports/FetchOrdersCount",
+                "root": "Brand",
+                "subroot": "Reports"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Reports/FetchOrdersAmount",
+                "root": "Brand",
+                "subroot": "Reports"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Reports/TopUsersByOrders",
+                "root": "Brand",
+                "subroot": "Reports"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Reports/TopUsersByAmount",
+                "root": "Brand",
+                "subroot": "Reports"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Reports/TopSearchedKeywords",
+                "root": "Brand",
+                "subroot": "Reports"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Reports/BrandWebsiteVisitors",
+                "root": "Brand",
+                "subroot": "Reports"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Reports/BrandWebsiteUniqueVisitors",
+                "root": "Brand",
+                "subroot": "Reports"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Reports/ProductVisitors",
+                "root": "Brand",
+                "subroot": "Reports"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Reports/ProductUniqueVisitors",
+                "root": "Brand",
+                "subroot": "Reports"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Brand/Reports/ProductUploadedCount",
+                "root": "Brand",
+                "subroot": "Reports"
+            }
+        ]
+    },
+    "Website": {
+        "Auth": [
+            {
+                "method": "POST",
+                "path": "v1/Website/Auth/SendOTP",
+                "root": "Website",
+                "subroot": "Auth"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Auth/VerifyOTP",
+                "root": "Website",
+                "subroot": "Auth"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Auth/FetchLoggedUser",
+                "root": "Website",
+                "subroot": "Auth"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Website/Auth/Logout",
+                "root": "Website",
+                "subroot": "Auth"
+            }
+        ],
+        "Brand": [
+            {
+                "method": "GET",
+                "path": "v1/Website/Brand/AboutUsPage",
+                "root": "Website",
+                "subroot": "Brand"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Brand/ContactForm",
+                "root": "Website",
+                "subroot": "Brand"
+            }
+        ],
+        "Products": [
+            {
+                "method": "POST",
+                "path": "v1/Website/Products/FetchBySearch",
+                "root": "Website",
+                "subroot": "Products"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Website/Products/SearchSuggestions",
+                "root": "Website",
+                "subroot": "Products"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Products/FetchByProductID",
+                "root": "Website",
+                "subroot": "Products"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Products/AddToWishList",
+                "root": "Website",
+                "subroot": "Products"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Products/RemoveFromWishList",
+                "root": "Website",
+                "subroot": "Products"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Website/Products/ListWishlistProducts",
+                "root": "Website",
+                "subroot": "Products"
+            }
+        ],
+        "Profile": [
+            {
+                "method": "GET",
+                "path": "v1/Website/Profile/ViewProfile",
+                "root": "Website",
+                "subroot": "Profile"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Profile/EditProfile",
+                "root": "Website",
+                "subroot": "Profile"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Profile/AddAddress",
+                "root": "Website",
+                "subroot": "Profile"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Profile/EditAddress",
+                "root": "Website",
+                "subroot": "Profile"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Profile/DeleteAddress",
+                "root": "Website",
+                "subroot": "Profile"
+            }
+        ],
+        "Orders": [
+            {
+                "method": "POST",
+                "path": "v1/Website/Orders/Checkout",
+                "root": "Website",
+                "subroot": "Orders"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Orders/CancelOrder",
+                "root": "Website",
+                "subroot": "Orders"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Website/Orders/ValidateCouponCode",
+                "root": "Website",
+                "subroot": "Orders"
+            }
+        ],
+        "Cart": [
+            {
+                "method": "POST",
+                "path": "v1/Website/Cart/AddToCart",
+                "root": "Website",
+                "subroot": "Cart"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Cart/IncreaseQuantity",
+                "root": "Website",
+                "subroot": "Cart"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Cart/DecreaseQuantity",
+                "root": "Website",
+                "subroot": "Cart"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Cart/DeleteBucketItem",
+                "root": "Website",
+                "subroot": "Cart"
+            },
+            {
+                "method": "GET",
+                "path": "v1/Website/Cart/FetchBucketItems",
+                "root": "Website",
+                "subroot": "Cart"
+            }
+        ],
+        "Chat": [
+            {
+                "method": "GET",
+                "path": "v1/Website/Chat/FetchChatBuckets",
+                "root": "Website",
+                "subroot": "Chat"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Chat/FetchBucketMessages",
+                "root": "Website",
+                "subroot": "Chat"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Chat/UpdateReadTimestamp",
+                "root": "Website",
+                "subroot": "Chat"
+            }
+        ],
+        "Home": [
+            {
+                "method": "POST",
+                "path": "v1/Website/Home",
+                "root": "Website",
+                "subroot": "Home"
+            }
+        ],
+        "Appointment": [
+            {
+                "method": "GET",
+                "path": "v1/Website/Appointment/AllBookedAppointments/:StartDate/:EndDate",
+                "root": "Website",
+                "subroot": "Appointment"
+            },
+            {
+                "method": "POST",
+                "path": "v1/Website/Appointment/BookAppointment",
+                "root": "Website",
+                "subroot": "Appointment"
+            }
+        ]
+    }
+}
